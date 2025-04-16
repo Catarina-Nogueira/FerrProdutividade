@@ -1,4 +1,4 @@
-public class Moradia {
+public class Moradia implements Cores {
     private String morada;
     private float area;
     private String cor;
