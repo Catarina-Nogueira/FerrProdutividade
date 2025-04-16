@@ -8,5 +8,9 @@ public class MainTributaveis {
 
         Veiculo v2 = new Veiculo("44-55-DD", 2500, Cores.AZUL);
         System.out.println("\n" + v2);
+
+        Veiculo v3 = new Veiculo();
+        System.out.println("\n" + v3);
+
     }
 }

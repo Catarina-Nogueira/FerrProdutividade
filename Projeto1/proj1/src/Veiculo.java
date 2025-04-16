@@ -9,6 +9,12 @@ public class Veiculo implements Cores {
         this.cor = cor;
     }
 
+    public Veiculo (){
+        this.cilindrada = 1000;
+        this.cor = Cores.VERMELHO;
+        this.matricula = "41-76-GN";
+    }
+
     public String getMatricula() {
         return matricula;
     }
