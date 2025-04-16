@@ -14,7 +14,11 @@ public class LivroRomance extends Livro{
         this.editora = "Areal";
     }
 
-    public String obterInformacoes() {
-        return super.obterInformacoes() + ", Editora: " + editora;
+    public String getEditora() {
+        return editora;
+    }
+
+    public String toString() {
+        return super.toString() + " --- Editora: " + editora;
     }
 }

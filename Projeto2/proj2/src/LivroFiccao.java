@@ -15,7 +15,11 @@ public class LivroFiccao extends Livro{
         this.tema = tema;
     }
 
-    public String obterInformacoes() {
-        return super.obterInformacoes() + ", Tema: " + tema;
+    public String getTema() {
+        return tema;
+    }
+
+    public String toString() {
+        return super.toString() + " --- Tema: " + tema;
     }
 }

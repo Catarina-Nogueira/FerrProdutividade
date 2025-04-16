@@ -34,9 +34,29 @@ public class Livro implements Calculos{
         return preco * quantidadeStock;
     }
 
-    public String obterInformacoes() {
-        return "Título: " + titulo + ", Autor: " + autor + ", Ano de Publicação: " + ano +
-                ", Preço: " + preco + " euros, Quantidade em Stock: " + quantidadeStock;
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getQuantidadeStock() {
+        return quantidadeStock;
+    }
+
+    public String toString () {
+        return "Título: " + titulo + " --- Autor: " + autor + " --- Ano de Publicação: " + ano +
+                " --- Preço: " + preco + " euros --- Quantidade em Stock: " + quantidadeStock;
     }
 
 }
