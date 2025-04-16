@@ -1,4 +1,4 @@
-public class Veiculo implements Cores {
+public class Veiculo implements Cores, Imposto {
     private String matricula;
     private int cilindrada;
     private String cor;
@@ -43,5 +43,14 @@ public class Veiculo implements Cores {
     public String toString() {
         return String.format("Veículo com matrícula %s e cilindrada %d tem cor %s",
                 matricula, cilindrada, cor);
+    }
+
+    @Override
+    public float calculaImposto() {
+        if (cilindrada < 1500) {
+            return 15.0f;
+        } else {
+            return 40.0f;
+        }
     }
 }

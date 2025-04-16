@@ -1,4 +1,4 @@
-public class Moradia implements Cores {
+public class Moradia implements Cores, Imposto {
     private String morada;
     private float area;
     private String cor;
@@ -37,5 +37,10 @@ public class Moradia implements Cores {
     public String toString() {
         return String.format("Moradia situada na %s com área de %.1f tem cor %s",
                 morada, area, cor);
+    }
+
+    @Override
+    public float calculaImposto() {
+        return area * 2.0f;
     }
 }
