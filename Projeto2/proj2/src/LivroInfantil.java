@@ -19,6 +19,9 @@ public class LivroInfantil extends Livro{
         this.idadeMax = idadeMax;
     }
 
+    public String obterInformacoes() {
+        return super.obterInformacoes() + ", Idade Mínima: " + idadeMin + ", Idade Máxima: " + idadeMax;
+    }
 
 
 }

@@ -14,4 +14,8 @@ public class LivroFiccao extends Livro{
         super(autor, titulo, ano, preco, quantidadeStock);
         this.tema = tema;
     }
+
+    public String obterInformacoes() {
+        return super.obterInformacoes() + ", Tema: " + tema;
+    }
 }

@@ -33,4 +33,10 @@ public class Livro implements Calculos{
     public double calcularValorTotalStock() {
         return preco * quantidadeStock;
     }
+
+    public String obterInformacoes() {
+        return "Título: " + titulo + ", Autor: " + autor + ", Ano de Publicação: " + ano +
+                ", Preço: " + preco + " euros, Quantidade em Stock: " + quantidadeStock;
+    }
+
 }
