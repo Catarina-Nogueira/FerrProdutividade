@@ -1,4 +1,4 @@
-public class Veiculo {
+public class Veiculo implements Cores {
     private String matricula;
     private int cilindrada;
     private String cor;
