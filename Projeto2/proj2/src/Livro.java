@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Livro implements Idade{
+public class Livro implements Calculos{
     private String autor;
     private String titulo;
     private int ano;
@@ -27,5 +27,10 @@ public class Livro implements Idade{
     @Override
     public double calcularIdade() {
         return LocalDate.now().getYear() - ano;
+    }
+
+    @Override
+    public double calcularValorTotalStock() {
+        return preco * quantidadeStock;
     }
 }
