@@ -1,5 +1,7 @@
 //Este exercício equivale ao exercício 1 da ficha 5 de programação
 
+import java.util.ArrayList;
+
 public class MainTributaveis {
     public static void main(String[] args) {
 
@@ -15,5 +17,12 @@ public class MainTributaveis {
         Moradia m1 = new Moradia("Rua do Dr. Plácido da Costa", 90, Cores.CINZENTO);
         System.out.println("\n" + m1);
 
+
+        ArrayList<Cores> tributaveis = new ArrayList<>();
+        tributaveis.add(v1);
+        tributaveis.add(v2);
+        tributaveis.add(v3);
+        tributaveis.add(m1);
+        System.out.println("\n" + tributaveis);
     }
 }
