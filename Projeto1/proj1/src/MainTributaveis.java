@@ -12,5 +12,8 @@ public class MainTributaveis {
         Veiculo v3 = new Veiculo();
         System.out.println("\n" + v3);
 
+        Moradia m1 = new Moradia("Rua do Dr. Plácido da Costa", 90, Cores.CINZENTO);
+        System.out.println("\n" + m1);
+
     }
 }
